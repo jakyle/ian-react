@@ -1,23 +1,21 @@
 import logo from './logo.svg';
+import { Message } from './components/Message';
 import './App.css';
+import { Incrementor } from './components/Incrementor';
 
-function App() {
+// a component is a function where the name of the function or variable
+// is capatilized
+const App = () => {
+
+
+  // a component should return what it's rendering, in React, that means JSX
+  // JSX is simply "javavscript under the hood", but it looks like HTML because
+  // the intent is to render HTML
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Message message="lol sup dude" />
+      <Message message="tee hee!" />
+      <Incrementor />
     </div>
   );
 }
