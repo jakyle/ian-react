@@ -1,8 +1,5 @@
-export const Message = (props) => {
-
-    
-
+export const Message = ({message}) => {
     return (
-        <p>{props.message}</p>
+        <p>{message}</p>
     );
 }
